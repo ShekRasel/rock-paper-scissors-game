@@ -1,0 +1,38 @@
+.para{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.css-body{
+    background-color:#b14141 ;
+}
+.body1{
+    background-color:#b14141;
+    width: 29%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.game-icon{
+    font-size: 60px;
+}
+.game-btn{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 7px solid #ed5a13;
+    background-color: #b8e0cd;
+}
+.reset-btn,.css-auto-btn,.css-stop-btn{
+    height: 45px ;
+    width: 150px;
+    font-size: 20px;
+}
+.reset-btn:hover,.css-auto-btn:hover,.css-stop-btn:hover{
+    background-color: rgb(228, 219, 209);
+}
+.same-para{
+    color: white;
+    font-size: 20px;
+}
