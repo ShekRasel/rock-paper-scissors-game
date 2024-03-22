@@ -34,36 +34,36 @@ function playGame(playerMove){
     if (playerMove==='rock'){
 
         if(computerMove==='rock'){
-            result='tie';
+            result='Tie';
         }
         else if(computerMove==='paper'){
-            result='you lose';
+            result='You lose';
         }else if(computerMove==='scissors'){
-            result='you win';
+            result='You win';
         }
             
     }
 
     else if(playerMove==='paper'){
             if(computerMove==='rock'){
-                result='you win';
+                result='You win';
             }
             else if(computerMove==='paper'){
-                result='tie';
+                result='Tie';
             }else if (computerMove==='scissors'){
-                result='you lose';
+                result='You lose';
             }
                 
     }
     else if (playerMove==='scissors'){
                 
             if(computerMove==='rock'){
-                result='you lose';
+                result='You lose';
             }
             else if(computerMove==='paper'){
-                result='you win';
+                result='You win';
             }else if (computerMove==='scissors'){
-                result='tie';
+                result='Tie';
             }  
     }
 
@@ -73,11 +73,11 @@ function playGame(playerMove){
 
 
 
-    if(result==='you win'){
+    if(result==='You win'){
         score.Wins+=1;
-    }else if(result==='you lose'){
+    }else if(result==='You lose'){
         score.Losses+=1;
-    }else if(result==='tie'){
+    }else if(result==='Tie'){
         score.Ties+=1;
     };
 
@@ -87,7 +87,8 @@ function playGame(playerMove){
     finalResult.classList.add('same-para');
 
     let finalResult1= document.querySelector('.js-move');
-    finalResult1.innerHTML=`you picked ${playerMove} - computer picked ${computerMove}`;
+    finalResult1.innerHTML=`you <img src="/images/${playerMove}.png" class="r-img">
+    computer <img src="/images/${computerMove}.png" class="r-img">`;
     finalResult1.classList.add('same-para');
     updateScoreElement();
 };

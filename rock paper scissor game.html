@@ -6,11 +6,12 @@
     <title>Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
-<body class="css-body">
-    <div class="body1">
-            <p class="para">Rock Paper scissors Game</p>
-
+<body>
+    <div class="game-card">
+        <p class="para">Rock Paper scissors Game</p>
+        <div class="body1">
             <button class="game-btn" id = "js-rock-play">
                 <i class="fa-solid fa-hand-back-fist game-icon"></i>
             </button>
@@ -22,20 +23,21 @@
             <button class="game-btn" id = "js-scissors-play">
                 <i class="fa-regular fa-hand-peace game-icon"></i>
             </button>
+        </div>
+        <p class="js-result"></p>
+        <p class="js-move">
+            
+        </p>
+        <p class="js-element"></p>
 
+        <button class="reset-btn" id ="js-reset-score">
+            Reset
+        </button>
 
-            <p class="js-result"></p>
-            <p class="js-move"></p>
-            <p class="js-element"></p>
-
-            <button class="reset-btn" id ="js-reset-score">
-                Reset
-            </button>
-
-            <button class = "css-auto-btn js-stop" id = "js-auto-play">
-                Auto Play
-            </button>
+        <button class = "css-auto-btn js-stop" id = "js-auto-play">
+            Auto Play
+        </button>
     </div>
-            <script src="rock paper scissor.js"></script>
+    <script src="rock paper scissor.js"></script>
 </body>
 </html>

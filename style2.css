@@ -1,19 +1,25 @@
-.para{
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
+body{
+    background-color: #b14141;
 }
-
-.css-body{
-    background-color:#b14141 ;
+.game-card{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 40px;
 }
 .body1{
-    background-color:#b14141;
-    width: 29%;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    gap: 15px;
 }
+p{
+    color: white;
+    font-size: 30px;
+}
+
 .game-icon{
     font-size: 60px;
 }
@@ -35,4 +41,10 @@
 .same-para{
     color: white;
     font-size: 20px;
+}
+
+.r-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30%;
 }

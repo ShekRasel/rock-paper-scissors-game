@@ -1,0 +1,25 @@
+@media screen  and (max-width : 400px){ 
+    body{
+        background-color: rgb(159, 157, 136);
+    }
+    .body1{
+        display: flex;
+        gap: 15px;
+    }
+    p{
+        color: black;
+    }
+
+    .game-btn{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 7px solid #ed5a13;
+        background-color: #b8e0cd;
+    }
+    .game-card{
+        border:1px solid white;
+        padding: 20px;
+    }
+   
+}
