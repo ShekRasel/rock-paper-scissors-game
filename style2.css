@@ -1,21 +1,58 @@
-.para{
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-}
-
-.css-body{
-    background-color:#b14141 ;
-}
-.body1{
-    background-color:#b14141;
-    width: 29%;
-    margin: auto;
+/* Body styling */
+.css-body {
+    background-color: #f3f3f3;
+    font-family: 'Arial', sans-serif;
+    display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
-.game-icon{
-    font-size: 60px;
+
+/* Card styling */
+.game-card {
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Title styling */
+.para {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Game buttons container */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Game button styling */
+.game-btn {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid #ed5a13;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .game-btn:hover {
@@ -98,10 +135,4 @@
     .para {
         font-size: 24px;
     }
-}
-
-.r-img{
-    height: 50px;
-    width: 50px;
-    border-radius: 30%;
 }
