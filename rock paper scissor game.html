@@ -3,39 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style2.css">
 </head>
 <body class="css-body">
-    <div class="body1">
-            <p class="para">Rock Paper scissors Game</p>
-
-            <button class="game-btn" id = "js-rock-play">
+    <div class="game-card">
+        <p class="para">Rock Paper Scissors Game</p>
+        <div class="buttons">
+            <button class="game-btn" id="js-rock-play" aria-label="Rock">
                 <i class="fa-solid fa-hand-back-fist game-icon"></i>
             </button>
-
-            <button class="game-btn" id = "js-paper-play">
+            <button class="game-btn" id="js-paper-play" aria-label="Paper">
                 <i class="fa-solid fa-hand game-icon"></i>
             </button>
-
-            <button class="game-btn" id = "js-scissors-play">
+            <button class="game-btn" id="js-scissors-play" aria-label="Scissors">
                 <i class="fa-regular fa-hand-peace game-icon"></i>
             </button>
+        </div>
 
+        <p class="result-text js-result"></p>
+        <p class="move-text js-move"></p>
+        <p class="element-text js-element"></p>
 
-            <p class="js-result"></p>
-            <p class="js-move"></p>
-            <p class="js-element"></p>
-
-            <button class="reset-btn" id ="js-reset-score">
-                Reset
-            </button>
-
-            <button class = "css-auto-btn js-stop" id = "js-auto-play">
-                Auto Play
-            </button>
+        <div class="controls">
+            <button class="control-btn" id="js-reset-score">Reset</button>
+            <button class="control-btn js-stop" id="js-auto-play">Auto Play</button>
+        </div>
     </div>
-            <script src="rock paper scissor.js"></script>
+    <script src="rock paper scissor.js"></script>
 </body>
 </html>
