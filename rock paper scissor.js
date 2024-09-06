@@ -29,39 +29,55 @@ pickComputerMove();
 function playGame(playerMove) {
     const computerMove = pickComputerMove();
 
-    if (playerMove === 'rock') {
-        if (computerMove === 'rock') {
-            result = 'tie';
-        } else if (computerMove === 'paper') {
-            result = 'you lose';
-        } else if (computerMove === 'scissors') {
-            result = 'you win';
+    if (playerMove==='rock'){
+
+        if(computerMove==='rock'){
+            result='tie';
         }
-    } else if (playerMove === 'paper') {
-        if (computerMove === 'rock') {
-            result = 'you win';
-        } else if (computerMove === 'paper') {
-            result = 'tie';
-        } else if (computerMove === 'scissors') {
-            result = 'you lose';
+        else if(computerMove==='paper'){
+            result='you lose';
+        }else if(computerMove==='scissors'){
+            result='you win';
         }
-    } else if (playerMove === 'scissors') {
-        if (computerMove === 'rock') {
-            result = 'you lose';
-        } else if (computerMove === 'paper') {
-            result = 'you win';
-        } else if (computerMove === 'scissors') {
-            result = 'tie';
-        }
+            
     }
 
-    if (result === 'you win') {
-        score.Wins += 1;
-    } else if (result === 'you lose') {
-        score.Losses += 1;
-    } else if (result === 'tie') {
-        score.Ties += 1;
+    else if(playerMove==='paper'){
+            if(computerMove==='rock'){
+                result='you win';
+            }
+            else if(computerMove==='paper'){
+                result='tie';
+            }else if (computerMove==='scissors'){
+                result='you lose';
+            }
+                
     }
+    else if (playerMove==='scissors'){
+                
+            if(computerMove==='rock'){
+                result='you lose';
+            }
+            else if(computerMove==='paper'){
+                result='you win';
+            }else if (computerMove==='scissors'){
+                result='tie';
+            }  
+    }
+
+    else if (playerMove==='reset'){
+        
+    };
+
+
+
+    if(result==='you win'){
+        score.Wins+=1;
+    }else if(result==='you lose'){
+        score.Losses+=1;
+    }else if(result==='tie'){
+        score.Ties+=1;
+    };
 
     localStorage.setItem('score', JSON.stringify(score));
 
@@ -70,9 +86,8 @@ function playGame(playerMove) {
     finalResult.innerHTML = `${result}`;
     finalResult.classList.add('same-para');
 
-    // Show moves with icons
-    let finalResult1 = document.querySelector('.js-move');
-    finalResult1.innerHTML = `You picked ${moveIcons[playerMove]} - Computer picked ${moveIcons[computerMove]}`;
+    let finalResult1= document.querySelector('.js-move');
+    finalResult1.innerHTML=`you picked ${playerMove} - computer picked ${computerMove}`;
     finalResult1.classList.add('same-para');
 
     updateScoreElement();
